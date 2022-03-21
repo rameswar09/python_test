@@ -75,7 +75,6 @@
 
 a = [10, 20, 20, 20, 30, 30, 30, 30]
 
-
 # temp = []
 
 # for i in range(len(a)):
@@ -114,17 +113,16 @@ a = [10, 20, 20, 20, 30, 30, 30, 30]
 #     if a[i]>number:
 #         print(a[i])
 #         number=a[i]
-    
 
-a= [7,9,5,6,3,2,17]
 
-min_v = a[0] # 30
-res=a[1]-a[0] # -20
-for i in range(1,len(a)):
-    if a[i]-min_v>res:
-        res=a[i]-min_v
+a = [7, 9, 5, 6, 3, 2, 17]
+
+min_v = a[0]  # 30
+res = a[1] - a[0]  # -20
+for i in range(1, len(a)):
+    if a[i] - min_v > res:
+        res = a[i] - min_v
     else:
-        min_v= min(min_v,a[i])
-    
-print(res)
+        min_v = min(min_v, a[i])
 
+print(res)

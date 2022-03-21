@@ -108,21 +108,20 @@
 
 
 def square_root(num):
-
     low = 0
     high = num
 
-    while(low <= high):
-        mid_value = (low+high)//2
+    while low <= high:
+        mid_value = (low + high) // 2
 
-        if mid_value*mid_value==num:
+        if mid_value * mid_value == num:
             return mid_value
-        elif (mid_value*mid_value)<num and ((mid_value+1)*(mid_value+1))>num:
+        elif (mid_value * mid_value) < num < ((mid_value + 1) * (mid_value + 1)):
             return mid_value
-        elif (mid_value*mid_value)>num:
-            high=mid_value-1
-        elif(mid_value*mid_value)<num:
-            low=mid_value+1
+        elif (mid_value * mid_value) > num:
+            high = mid_value - 1
+        elif (mid_value * mid_value) < num:
+            low = mid_value + 1
 
         # if ((mid_value+1)*(mid_value+1)) > num:
         #     high = mid_value-1
